@@ -11,4 +11,5 @@
     <color name="botoninicio">#3C4557</color>
     <color name="botonregistro">#E0E5F1</color>
     <color name="errorlogin">#E0E5F1</color>
+    <color name="rojo">#FA1F3A</color>
 </resources>

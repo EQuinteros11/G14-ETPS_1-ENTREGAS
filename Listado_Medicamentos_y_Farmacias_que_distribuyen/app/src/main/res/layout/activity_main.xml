@@ -91,7 +91,6 @@
             android:layout_marginTop="32dp"
             android:backgroundTint="@color/botoninicio"
             android:elevation="25dp"
-            android:onClick="Home"
             android:text="Iniciar Sesión"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
