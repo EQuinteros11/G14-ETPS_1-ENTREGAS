@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 EditText edtUsuario, edtPass;
 Button btnIniciar;
-String nombre[];
 
 
     @Override
@@ -33,45 +32,24 @@ String nombre[];
                     public void onClick(View view) {
                         LayoutInflater inflater =getLayoutInflater();
                         View layout=inflater.inflate(R.layout.error_de_session,(ViewGroup) findViewById(R.id.MensajeError));
-                        nombre = new String [4];
-                        String nombre []= {"EliasQ","IvanM","Edward","Jessi"};
                         String use="", pass="";
                         use = edtUsuario.getText().toString();
                         pass = edtPass.getText().toString();
                         Toast toastP = new Toast(getApplicationContext());
-
-                      //  for(int i=0; i<5;i++){
-                            System.out.println(nombre[0]);
-                           if(use.equals("EliasQ") && pass.equals("123")) {
+                        if(use.equals("EliasQ") && pass.equals("123")) {
                                 Intent intento=new Intent(getApplicationContext(),Home.class);
+                                intento.putExtra("usuario",edtUsuario.getText().toString());
                                 startActivity(intento);
-                              //  i = 6;
-                            }
-                            else  {
+                        }
+                        else    {
                                 TextView txtMensaje=(TextView) layout.findViewById(R.id.tvErrorLogin);
                                 txtMensaje.setText("Usuario o contraseña invalidos");
-                        toastP.setDuration(Toast.LENGTH_LONG);
-                        toastP.setView(layout);
-                        toastP.show();
+                                toastP.setDuration(Toast.LENGTH_LONG);
+                                toastP.setView(layout);
+                                toastP.show();
                                 }
-                      //  }
                     }
                 });
 
-    }
-    public void Home(View v){
-        nombre = new String [4];
-        String nombre []= {"EliasQ","IvanM","Edward","Jessi"};
-        String use, pass;
-        use = edtUsuario.getText().toString();
-        pass = edtPass.getText().toString();
-        for(int i=0; i<5;i++){
-            System.out.println(nombre[0]);
-            if(use.equals(nombre[i]) && pass.equals("123")){
-                Intent mostrar = new Intent(this,Home.class);
-                startActivity(mostrar);
-                i=6;
-            }
-       }
     }
 }
