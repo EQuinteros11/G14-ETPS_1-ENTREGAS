@@ -11,9 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -54,7 +52,7 @@
             android:hint="Digite su usuario"
             android:inputType="textPersonName"
             android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColorHint="#80FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
 
@@ -80,7 +78,7 @@
             android:hint="Digite su contraseña"
             android:inputType="textPassword"
             android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColorHint="#80FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvcontra" />
 
@@ -92,6 +90,7 @@
             android:backgroundTint="@color/botoninicio"
             android:elevation="25dp"
             android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +127,7 @@
             android:layout_width="251dp"
             android:layout_height="48dp"
             android:backgroundTint="@color/botonregistro"
-            android:text="¡ registrate !"
+            android:text="Registrate"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:cornerRadius="20dp"
