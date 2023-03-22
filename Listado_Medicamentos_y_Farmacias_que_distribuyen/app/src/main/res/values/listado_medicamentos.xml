@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ListadoMedicamentos">
+        <item>Acetaminofen</item>
+        <item>Loratadina</item>
+        <item>Ibuprofeno</item>
+        <item>Loracepan</item>
+        <item>Tabcin</item>
+        <item>Salbutamol</item>
+        <item>Beclometasona</item>
+        <item>Amoxicilina</item>
+        <item>Zinc</item>
+        <item>Hierro</item>
+        <item>Bromuro de Hioshina</item>
+        <item>Propofol</item>
+    </string-array>
+</resources>

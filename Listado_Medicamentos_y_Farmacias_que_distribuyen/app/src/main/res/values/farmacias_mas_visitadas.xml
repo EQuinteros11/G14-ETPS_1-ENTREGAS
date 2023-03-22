@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="FarmaciasMasVisitadas">
+        <item>Farmacia San Nicolas</item>
+        <item>Farmacia San Benitos</item>
+        <item>Farmacias Economicas</item>
+        <item>Farmacia Value</item>
+    </string-array>
+</resources>

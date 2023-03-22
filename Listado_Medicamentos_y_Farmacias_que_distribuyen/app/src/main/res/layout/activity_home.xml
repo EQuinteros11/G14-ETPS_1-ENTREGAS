@@ -32,6 +32,9 @@
                     android:id="@+id/imageView3"
                     android:layout_width="100dp"
                     android:layout_height="95dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/foto2"
                     android:padding="4dp"
                     android:scaleType="centerCrop"
@@ -68,6 +71,16 @@
                     app:layout_constraintStart_toEndOf="@+id/tvInfo"
                     app:layout_constraintTop_toTopOf="@+id/tvInfo" />
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_farmacia" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -80,9 +93,10 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="20dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Antiparasitarios"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                    app:layout_constraintTop_toBottomOf="@+id/btnCategoria1" />
 
                 <Button
                     android:id="@+id/button10"
@@ -90,7 +104,8 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="20dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Diuréticos"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -101,7 +116,8 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Antimicóticos"
                     app:layout_constraintEnd_toStartOf="@+id/button8"
                     app:layout_constraintStart_toEndOf="@+id/button5"
                     app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -113,19 +129,23 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Cardiovascular"
                     app:layout_constraintEnd_toStartOf="@+id/button12"
                     app:layout_constraintHorizontal_bias="0.51"
                     app:layout_constraintStart_toEndOf="@+id/button5"
                     app:layout_constraintTop_toBottomOf="@+id/button6" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnCategoria1"
                     android:layout_width="110dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="20dp"
-                    android:text="Button"
+                    android:background="#FD3B3B"
+                    android:backgroundTint="@color/botoninicio"
+                    android:text="Analgesicos"
+                    android:textColor="#FFFFFF"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
@@ -136,7 +156,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
                     android:background="@color/botoninicio"
-                    android:text="Button"
+                    android:text="Antivirales"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -146,7 +166,8 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Relajantes"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button8" />
 
@@ -157,9 +178,11 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:backgroundTint="#6200ED"
+                    android:text="Antimicrobianos"
                     app:layout_constraintEnd_toStartOf="@+id/button4"
-                    app:layout_constraintStart_toEndOf="@+id/button2"
+                    app:layout_constraintStart_toEndOf="@+id/btnCategoria1"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
                 <Button
@@ -168,7 +191,8 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
-                    android:text="Button"
+                    android:background="#6200ED"
+                    android:text="Soluciones Parentales"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
@@ -235,7 +259,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnVerFarmacias"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
@@ -250,16 +274,27 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0" />
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/listado_farmacias"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <ListView
+                        android:id="@+id/listFarmaciasMasVisitadas"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
