@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText edtUsuario, edtPass;
-Button btnIniciar;
+Button btnIniciar, btnRegistrar;
 
 
     @Override
@@ -24,9 +24,16 @@ Button btnIniciar;
         edtUsuario = findViewById(R.id.edtUsuario);
         edtPass = findViewById(R.id.edtContra);
         btnIniciar = findViewById(R.id.btnIniciar);
+        btnRegistrar = findViewById(R.id.btnRegistrar);
 
        // for(int i=1; i<5; i++) {
-
+                btnRegistrar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intento1=new Intent(getApplicationContext(),Registro_Usuario.class);
+                        startActivity(intento1);
+                    }
+                });
                 btnIniciar.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
