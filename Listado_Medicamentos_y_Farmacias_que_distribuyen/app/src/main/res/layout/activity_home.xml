@@ -339,7 +339,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#252525"
+            android:background="#252524"
             android:elevation="3dp"
             android:minHeight="?attr/actionBarSize"
             app:title="Menú"
