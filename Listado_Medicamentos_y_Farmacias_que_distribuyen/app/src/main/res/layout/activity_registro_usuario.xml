@@ -71,7 +71,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName"
+                            android:id="@+id/edtNombreRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -99,7 +99,35 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName2"
+                            android:id="@+id/edtPrimerApellidoRegistro"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:hint="Pineda Pérez"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:textColor="#252525"
+                            android:textColorHint="#7C7C7C" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apellidos *"
+                            android:textColor="#252525"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtSegundoApellidoRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -127,7 +155,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName4"
+                            android:id="@+id/edtEdadRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -155,7 +183,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName5"
+                            android:id="@+id/edtCorreoRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -183,7 +211,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPassword"
+                            android:id="@+id/edtContrasenaRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -211,7 +239,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPassword2"
+                            android:id="@+id/edtConfirmacionContrasenaRegistro"
                             android:layout_width="match_parent"
                             android:layout_height="42dp"
                             android:background="#FFFFFF"
@@ -225,7 +253,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnRegistrpUsuario"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
