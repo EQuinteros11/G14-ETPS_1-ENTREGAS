@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD"
-    android:fitsSystemWindows="true"
     tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
     tools:openDrawer="start"
     android:id="@+id/drawLayout">
 

@@ -66,6 +66,8 @@ public class Home extends AppCompatActivity {
 
                     case R.id.Profile:
                         Toast.makeText(Home.this, "Selección Perfil", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent( getApplicationContext(), Datos_Generales_Perfil.class );
+                        startActivity( intent );
                         break;
 
                     case R.id.LogOut:
@@ -75,7 +77,7 @@ public class Home extends AppCompatActivity {
                 return true;
             }
         });
-        
+
         /* FIN DE FUNCIONALIDAD D EMENÚ */
 
         Bundle bundle = getIntent().getExtras();

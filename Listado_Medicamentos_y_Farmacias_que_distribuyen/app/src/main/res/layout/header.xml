@@ -4,21 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="175dp"
     android:gravity="bottom"
-    android:background="#DDBBBB"
+    android:background="@drawable/fondo_header"
     android:padding="20dp">
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/baseline_medical_services">
-    </ImageView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Proyecto final"
-        android:textStyle="bold"
-        android:textColor="#FF4768BC"
-        android:textSize="20sp">
-
-    </TextView>
 </LinearLayout>
