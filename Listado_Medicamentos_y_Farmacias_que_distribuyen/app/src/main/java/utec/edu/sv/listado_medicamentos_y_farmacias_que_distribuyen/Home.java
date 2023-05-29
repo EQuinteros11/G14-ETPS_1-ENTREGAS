@@ -42,6 +42,8 @@ public class Home extends AppCompatActivity {
         nView = findViewById( R.id.navView );
 
         /* FUNCIONALIDAD D EMENÚ */
+
+        /* Funcionamiento de escucha para eventos de menú lateral */
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle( this, drawerLayout, tlbar, R.string.open, R.string.close );
         drawerLayout.addDrawerListener( toggle );
         toggle.syncState();
@@ -49,6 +51,7 @@ public class Home extends AppCompatActivity {
             toggle.getDrawerArrowDrawable().setColor( getResources().getColor( R.color.white, null ) );
         }
 
+        /* Funcionamiento para verficar escucha de elemento seleccionado de menú */
         nView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -72,8 +75,7 @@ public class Home extends AppCompatActivity {
                 return true;
             }
         });
-
-
+        
         /* FIN DE FUNCIONALIDAD D EMENÚ */
 
         Bundle bundle = getIntent().getExtras();
