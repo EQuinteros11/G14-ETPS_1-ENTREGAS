@@ -12,6 +12,323 @@
     tools:openDrawer="start"
     android:id="@+id/drawLayout">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/PrimerConstrain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@color/white"
+                tools:context=".MainActivity">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/encabezado"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.001">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/foto2"
+                                android:padding="4dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.29"
+                                app:shapeAppearanceOverlay="@style/circleimage"
+                                app:strokeColor="@color/purple_500"
+                                app:strokeWidth="4dp" />
+
+                            <TextView
+                                android:id="@+id/tvInfo"
+                                android:layout_width="78dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginBottom="8dp"
+                                android:text="Bienvenido:"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                                app:layout_constraintVertical_bias="0.869">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/tvVerUsuario"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="@+id/tvInfo"
+                                app:layout_constraintStart_toEndOf="@+id/tvInfo"
+                                app:layout_constraintTop_toTopOf="@+id/tvInfo" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/logo_farmacia" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#6200ED"
+                                android:text="Antiparasitarios"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/btnCategoria1" />
+
+                            <Button
+                                android:id="@+id/button10"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#6200ED"
+                                android:text="Diuréticos"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="40dp"
+                                android:background="#6200ED"
+                                android:text="Antimicóticos"
+                                app:layout_constraintEnd_toStartOf="@+id/button8"
+                                app:layout_constraintStart_toEndOf="@+id/button5"
+                                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+                            <Button
+                                android:id="@+id/button11"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="40dp"
+                                android:background="#6200ED"
+                                android:text="Cardiovascular"
+                                app:layout_constraintEnd_toStartOf="@+id/button12"
+                                app:layout_constraintHorizontal_bias="0.51"
+                                app:layout_constraintStart_toEndOf="@+id/button5"
+                                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+                            <Button
+                                android:id="@+id/btnCategoria1"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#FD3B3B"
+                                android:backgroundTint="@color/botoninicio"
+                                android:text="Analgesicos"
+                                android:textColor="#FFFFFF"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                            <Button
+                                android:id="@+id/button8"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="@color/botoninicio"
+                                android:text="Antivirales"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+                            <Button
+                                android:id="@+id/button12"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="#6200ED"
+                                android:text="Relajantes"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="40dp"
+                                android:background="#6200ED"
+                                android:backgroundTint="#6200ED"
+                                android:text="Antimicrobianos"
+                                app:layout_constraintEnd_toStartOf="@+id/button4"
+                                app:layout_constraintStart_toEndOf="@+id/btnCategoria1"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="#6200ED"
+                                android:text="Soluciones Parentales"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/buscarforma"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/editTextTextPersonName3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="60dp"
+                                    android:ems="13"
+                                    android:hint="Buscar medicamento"
+                                    android:inputType="textPersonName"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="70dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/img_1"
+                                    android:padding="4dp"
+                                    android:scaleType="centerCrop"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+
+                                    app:shapeAppearanceOverlay="@style/circleimage"
+                                    tools:layout_editor_absoluteY="0dp" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Farmacias mas Consultadas"
+                                android:textColor="#252525"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Button
+                                android:id="@+id/btnVerFarmacias"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:background="@color/botoninicio"
+                                android:text="Ver Lista"
+                                android:textColor="@color/white"
+                                android:textSize="11sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/textView3"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/listado_farmacias">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ListView
+                                    android:id="@+id/listFarmaciasMasVisitadas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,315 +357,6 @@
         android:id="@+id/navView">
     </com.google.android.material.navigation.NavigationView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/PrimerConstrain"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="60dp"
-            android:background="@color/white"
-            tools:context=".MainActivity">
-
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/encabezado"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.001">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="100dp"
-                            android:layout_height="95dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/foto2"
-                            android:padding="4dp"
-                            android:scaleType="centerCrop"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.29"
-                            app:shapeAppearanceOverlay="@style/circleimage"
-                            app:strokeColor="@color/purple_500"
-                            app:strokeWidth="4dp" />
-
-                        <TextView
-                            android:id="@+id/tvInfo"
-                            android:layout_width="78dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginBottom="8dp"
-                            android:text="Bienvenido:"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                            app:layout_constraintVertical_bias="0.869">
-
-                        </TextView>
-
-                        <TextView
-                            android:id="@+id/tvVerUsuario"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintBottom_toBottomOf="@+id/tvInfo"
-                            app:layout_constraintStart_toEndOf="@+id/tvInfo"
-                            app:layout_constraintTop_toTopOf="@+id/tvInfo" />
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/logo_farmacia" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <Button
-                            android:id="@+id/button5"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="20dp"
-                            android:background="#6200ED"
-                            android:text="Antiparasitarios"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/btnCategoria1" />
-
-                        <Button
-                            android:id="@+id/button10"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="20dp"
-                            android:background="#6200ED"
-                            android:text="Diuréticos"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-                        <Button
-                            android:id="@+id/button6"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="40dp"
-                            android:background="#6200ED"
-                            android:text="Antimicóticos"
-                            app:layout_constraintEnd_toStartOf="@+id/button8"
-                            app:layout_constraintStart_toEndOf="@+id/button5"
-                            app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-                        <Button
-                            android:id="@+id/button11"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="40dp"
-                            android:background="#6200ED"
-                            android:text="Cardiovascular"
-                            app:layout_constraintEnd_toStartOf="@+id/button12"
-                            app:layout_constraintHorizontal_bias="0.51"
-                            app:layout_constraintStart_toEndOf="@+id/button5"
-                            app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-                        <Button
-                            android:id="@+id/btnCategoria1"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="20dp"
-                            android:background="#FD3B3B"
-                            android:backgroundTint="@color/botoninicio"
-                            android:text="Analgesicos"
-                            android:textColor="#FFFFFF"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-                        <Button
-                            android:id="@+id/button8"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@color/botoninicio"
-                            android:text="Antivirales"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-                        <Button
-                            android:id="@+id/button12"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="#6200ED"
-                            android:text="Relajantes"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="40dp"
-                            android:background="#6200ED"
-                            android:backgroundTint="#6200ED"
-                            android:text="Antimicrobianos"
-                            app:layout_constraintEnd_toStartOf="@+id/button4"
-                            app:layout_constraintStart_toEndOf="@+id/btnCategoria1"
-                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-                        <Button
-                            android:id="@+id/button4"
-                            android:layout_width="110dp"
-                            android:layout_height="100dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="#6200ED"
-                            android:text="Soluciones Parentales"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="16dp"
-                            android:background="@drawable/buscarforma"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <EditText
-                                android:id="@+id/editTextTextPersonName3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="60dp"
-                                android:ems="13"
-                                android:hint="Buscar medicamento"
-                                android:inputType="textPersonName"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <com.google.android.material.imageview.ShapeableImageView
-                                android:id="@+id/imageView4"
-                                android:layout_width="70dp"
-                                android:layout_height="50dp"
-                                android:background="@drawable/img_1"
-                                android:padding="4dp"
-                                android:scaleType="centerCrop"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
-
-                                app:shapeAppearanceOverlay="@style/circleimage"
-                                tools:layout_editor_absoluteY="0dp" />
-
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="15dp">
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:gravity="center_vertical"
-                            android:text="Farmacias mas Consultadas"
-                            android:textColor="#252525"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <Button
-                            android:id="@+id/btnVerFarmacias"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:background="@color/botoninicio"
-                            android:text="Ver Lista"
-                            android:textColor="@color/white"
-                            android:textSize="11sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
-                            app:layout_constraintStart_toEndOf="@+id/textView3"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="194dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/listado_farmacias">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ListView
-                                android:id="@+id/listFarmaciasMasVisitadas"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-                        </LinearLayout>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-            </ScrollView>
-
-
-        </LinearLayout>
-    </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
