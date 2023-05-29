@@ -15,13 +15,16 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(utilidades.TABLA_DATOS_USUARIO);
-        db.execSQL(utilidades.TABLA_USUARIO);
-        db.execSQL(utilidades.TABLA_MEDICAMENTO);
-        db.execSQL(utilidades.TABLA_CAT_MEDICA);
-        db.execSQL(utilidades.TABLA_PRECIOS);
-        db.execSQL(utilidades.TABLA_DIRECCIONES);
-        db.execSQL(utilidades.TABLA_FARMACIAS);
+        db.execSQL(utilidades.CREAR_TABLA_DATOS_USUARIO);
+        db.execSQL(utilidades.CREAR_TABLA_USUARIO);
+        db.execSQL(utilidades.CREAR_TABLA_MEDICAMENTO);
+        db.execSQL(utilidades.CREAR_TABLA_CAT_MEDICA);
+        db.execSQL(utilidades.CREAR_TABLA_PRECIOS);
+        db.execSQL(utilidades.CREAR_TABLA_DIRECCIONES);
+        db.execSQL(utilidades.CREAR_TABLA_FARMACIAS);
+        db.execSQL("CREATE TABLE ctl_Contar(" +
+                "cont integer primary key autoincrement," +
+                "fecchaR date )");
 
     }
 

@@ -3,6 +3,8 @@ package utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +14,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.clases.VariablesGlobales;
+import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.helper.AdminSQLiteOpenHelper;
+import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.utilidades.utilidades;
+
 public class MainActivity extends AppCompatActivity {
-EditText edtUsuario, edtPass;
-Button btnIniciar, btnRegistrar;
+    VariablesGlobales va=VariablesGlobales.getInstance();
+    EditText edtUsuario, edtPass;
+    Button btnIniciar, btnRegistrar;
 
 
     @Override
@@ -40,13 +47,20 @@ Button btnIniciar, btnRegistrar;
                         LayoutInflater inflater =getLayoutInflater();
                         View layout=inflater.inflate(R.layout.error_de_session,(ViewGroup) findViewById(R.id.MensajeError));
                         String use="", pass="";
+                        Toast toastP = new Toast(getApplicationContext());
+                        AdminSQLiteOpenHelper admin =new AdminSQLiteOpenHelper(getApplicationContext(),"BD_listadoFarmacia",null,1);
+                        SQLiteDatabase db =admin.getWritableDatabase();
                         use = edtUsuario.getText().toString();
                         pass = edtPass.getText().toString();
-                        Toast toastP = new Toast(getApplicationContext());
-                        if(use.equals("EliasQ") && pass.equals("123")) {
+                        Cursor fila = db.rawQuery( "select "+utilidades.CAMPO_USER_NICKNAME+"  from "+utilidades.TABLA_USUARIO+"  where "+utilidades.CAMPO_USER_NICKNAME+"="+"'"+use+"'"+" and "+utilidades.CAMPO_PASS+" = "+"'"+pass+"'" ,null );
+
+                        if(fila.moveToFirst()) {
+                                va.setNickUser(fila.getString(0));
                                 Intent intento=new Intent(getApplicationContext(),Home.class);
-                                intento.putExtra("usuario",edtUsuario.getText().toString());
+                                Toast.makeText(MainActivity.this, "Bienvenido"+fila.getString(0), Toast.LENGTH_SHORT).show();
+                                intento.putExtra("usuario",fila.getString(0));
                                 startActivity(intento);
+
                         }
                         else    {
                                 TextView txtMensaje=(TextView) layout.findViewById(R.id.tvErrorLogin);
