@@ -52,14 +52,21 @@ public class MainActivity extends AppCompatActivity {
                         SQLiteDatabase db =admin.getWritableDatabase();
                         use = edtUsuario.getText().toString();
                         pass = edtPass.getText().toString();
-                        Cursor fila = db.rawQuery( "select "+utilidades.CAMPO_USER_NICKNAME+"  from "+utilidades.TABLA_USUARIO+"  where "+utilidades.CAMPO_USER_NICKNAME+"="+"'"+use+"'"+" and "+utilidades.CAMPO_PASS+" = "+"'"+pass+"'" ,null );
+                        Cursor fila = db.rawQuery( "select "+utilidades.CAMPO_USER_NICKNAME+", "+utilidades.CAMPO_ROL+"  from "+utilidades.TABLA_USUARIO+"  where "+utilidades.CAMPO_USER_NICKNAME+"="+"'"+use+"'"+" and "+utilidades.CAMPO_PASS+" = "+"'"+pass+"'" ,null );
 
                         if(fila.moveToFirst()) {
                                 va.setNickUser(fila.getString(0));
+                                System.out.println(fila.getString(1));
+                                if (fila.getString(1).equals("admin")){
+                                    Intent intento=new Intent(getApplicationContext(),Mantenimientos_CRUD_BD.class);
+                                    Toast.makeText(MainActivity.this, "Bienvenido "+fila.getString(1), Toast.LENGTH_SHORT).show();
+                                    startActivity(intento);
+                                }
+                                else{
                                 Intent intento=new Intent(getApplicationContext(),Home.class);
-                                Toast.makeText(MainActivity.this, "Bienvenido"+fila.getString(0), Toast.LENGTH_SHORT).show();
-                                intento.putExtra("usuario",fila.getString(0));
+                                Toast.makeText(MainActivity.this, "Bienvenido "+fila.getString(0), Toast.LENGTH_SHORT).show();
                                 startActivity(intento);
+                                }
 
                         }
                         else    {

@@ -19,7 +19,6 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         db.execSQL(utilidades.CREAR_TABLA_USUARIO);
         db.execSQL(utilidades.CREAR_TABLA_MEDICAMENTO);
         db.execSQL(utilidades.CREAR_TABLA_CAT_MEDICA);
-        db.execSQL(utilidades.CREAR_TABLA_PRECIOS);
         db.execSQL(utilidades.CREAR_TABLA_DIRECCIONES);
         db.execSQL(utilidades.CREAR_TABLA_FARMACIAS);
         db.execSQL("CREATE TABLE ctl_Contar(" +

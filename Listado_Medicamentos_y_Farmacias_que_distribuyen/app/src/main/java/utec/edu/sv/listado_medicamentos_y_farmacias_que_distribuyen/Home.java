@@ -19,7 +19,10 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
+import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.clases.VariablesGlobales;
+
 public class Home extends AppCompatActivity {
+    VariablesGlobales va= VariablesGlobales.getInstance();
     TextView tvverusu;
     ListView lstFarmacias;
     Button btnListaFarmacias, btCategoria1;
@@ -72,6 +75,8 @@ public class Home extends AppCompatActivity {
 
                     case R.id.LogOut:
                         Toast.makeText(Home.this, "Selección Cerrar Sesión", Toast.LENGTH_SHORT).show();
+                        Intent o = new Intent( getApplicationContext(), MainActivity.class );
+                        startActivity( o );
                         break;
                 }
                 return true;
@@ -80,10 +85,10 @@ public class Home extends AppCompatActivity {
 
         /* FIN DE FUNCIONALIDAD D EMENÚ */
 
-        Bundle bundle = getIntent().getExtras();
+
         tvverusu =findViewById(R.id.tvVerUsuario);
-        String ver = bundle.getString("usuario");
-        tvverusu.setText(ver);
+
+        tvverusu.setText(va.getNickUser());
 
         adapter = ArrayAdapter.createFromResource(this, R.array.FarmaciasMasVisitadas, android.R.layout.simple_list_item_1 );
         lstFarmacias.setAdapter( adapter );

@@ -6,6 +6,16 @@ public class VariablesGlobales {
        //Declarar variable
     private static String NickUser ="";
 
+    public String getIdDirCop() {
+        return ID_DIR_COP;
+    }
+
+    public void setIdDirCop(String idDirCop) {
+        ID_DIR_COP = idDirCop;
+    }
+
+    private static String ID_DIR_COP ;
+
     public String getNickUser() {
         return NickUser;
     }
