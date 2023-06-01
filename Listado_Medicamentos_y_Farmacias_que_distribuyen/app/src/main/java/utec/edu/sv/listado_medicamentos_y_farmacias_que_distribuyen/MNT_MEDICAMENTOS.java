@@ -22,6 +22,7 @@ public class MNT_MEDICAMENTOS extends AppCompatActivity {
         btnNavMedi = findViewById(R.id.btnNavMedi);
         btnNavMedi.setOnNavigationItemSelectedListener((BottomNavigationView.OnNavigationItemSelectedListener) navaListener);
     }
+
     private BottomNavigationView.OnNavigationItemSelectedListener navaListener= new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -45,4 +46,5 @@ public class MNT_MEDICAMENTOS extends AppCompatActivity {
 
 
     };
+
 }

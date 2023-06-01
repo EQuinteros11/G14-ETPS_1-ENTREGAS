@@ -11,6 +11,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.clases.Control_Medicamento;
 import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.clases.Control_detalle_farmacia;
+import utec.edu.sv.listado_medicamentos_y_farmacias_que_distribuyen.clases.Control_lista_detalle_farmacia;
 
 public class MNT_DEATLLE_FARMACIA extends AppCompatActivity {
     BottomNavigationView btnNavDetF;
@@ -30,7 +31,7 @@ public class MNT_DEATLLE_FARMACIA extends AppCompatActivity {
 
             switch (item.getItemId()){
                 case R.id.nav_ver:
-                    seleccionFrag = new Control_lista_Medicamento();
+                    seleccionFrag = new Control_lista_detalle_farmacia();
                     break;
                 case R.id.nav_crear:
                     seleccionFrag = new Control_detalle_farmacia();

@@ -64,6 +64,8 @@ public class Home extends AppCompatActivity {
                         break;
 
                     case R.id.Category:
+                        Intent m = new Intent(getApplicationContext(),CategoriaMostrar.class);
+                        startActivity(m);
                         Toast.makeText(Home.this, "Selección Categoria", Toast.LENGTH_SHORT).show();
                         break;
 

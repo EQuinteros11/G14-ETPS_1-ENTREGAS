@@ -21,6 +21,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         db.execSQL(utilidades.CREAR_TABLA_CAT_MEDICA);
         db.execSQL(utilidades.CREAR_TABLA_DIRECCIONES);
         db.execSQL(utilidades.CREAR_TABLA_FARMACIAS);
+        db.execSQL(utilidades.CREAR_TABLA_FARMACIA_DETALLE);
         db.execSQL("CREATE TABLE ctl_Contar(" +
                 "cont integer primary key autoincrement," +
                 "fecchaR date )");

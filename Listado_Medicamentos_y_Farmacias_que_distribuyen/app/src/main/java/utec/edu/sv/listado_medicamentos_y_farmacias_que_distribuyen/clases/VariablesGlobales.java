@@ -6,6 +6,36 @@ public class VariablesGlobales {
        //Declarar variable
     private static String NickUser ="";
 
+
+    public  String getIdDfCat() {
+        return ID_DF_CAT;
+    }
+
+    public  void setIdDfCat(String idDfCat) {
+        ID_DF_CAT = idDfCat;
+    }
+
+    public  String getIdDfMedi() {
+        return ID_DF_MEDI;
+    }
+
+    public  void setIdDfMedi(String idDfMedi) {
+        ID_DF_MEDI = idDfMedi;
+    }
+
+    private static String ID_DF_CAT ="";
+    private static String ID_DF_MEDI="";
+
+    public  String getIDFAR() {
+        return IDFAR;
+    }
+
+    public  void setIDFAR(String IDFAR) {
+        VariablesGlobales.IDFAR = IDFAR;
+    }
+
+    private static String IDFAR = "" ;
+
     public String getIdDirCop() {
         return ID_DIR_COP;
     }

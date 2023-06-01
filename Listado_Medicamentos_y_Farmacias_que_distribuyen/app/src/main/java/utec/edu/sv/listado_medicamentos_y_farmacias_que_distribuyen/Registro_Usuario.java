@@ -69,7 +69,7 @@ public class Registro_Usuario extends AppCompatActivity {
 
                                 detalle2.put("USER_NICKNAME",concat.getString(0)+edtApellidof.getText().toString().toLowerCase());
                                 detalle2.put("PASS",PASS);
-                                detalle2.put("ROL","");
+                                detalle2.put("ROL","admin");
                                 detalle2.put("ID_DU",concat.getString(1));
                                 db.insert(utilidades.TABLA_USUARIO,null,detalle2);
                                 System.out.println(concat.getString(0));
