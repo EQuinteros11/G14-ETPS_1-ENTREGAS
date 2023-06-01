@@ -162,7 +162,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
                                     android:layout_weight="1"
-                                    android:text="Ejemplo"
+                                    android:text="Jessica"
                                     android:textColor="#505050"
                                     android:textSize="17sp" />
 
@@ -172,7 +172,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
-                                    android:text="Ejemplo"
+                                    android:text="Perez"
                                     android:textColor="#505050"
                                     android:textSize="17sp" />
                             </LinearLayout>
@@ -184,7 +184,7 @@
 
                                 <TextView
                                     android:id="@+id/txvEdad"
-                                    android:layout_width="54dp"
+                                    android:layout_width="15dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
                                     android:layout_marginTop="15dp"
@@ -219,7 +219,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
                                     android:layout_weight="1"
-                                    android:text="Ejemplo"
+                                    android:text="25 años"
                                     android:textColor="#505050"
                                     android:textSize="17sp" />
 
@@ -229,7 +229,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
-                                    android:text="Ejemplo"
+                                    android:text="jessica.perez"
                                     android:textColor="#505050"
                                     android:textSize="17sp" />
                             </LinearLayout>

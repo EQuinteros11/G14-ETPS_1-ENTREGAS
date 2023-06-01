@@ -115,8 +115,11 @@
                                 android:layout_height="100dp"
                                 android:layout_marginStart="24dp"
                                 android:layout_marginTop="20dp"
-                                android:background="#6200ED"
-                                android:text="Antiparasitarios"
+                                android:backgroundTint="#20328C"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:text="Anti
+                                parasitarios"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/btnCategoria1" />
 
@@ -126,8 +129,10 @@
                                 android:layout_height="100dp"
                                 android:layout_marginStart="24dp"
                                 android:layout_marginTop="20dp"
-                                android:background="#6200ED"
+                                android:backgroundTint="#BA7B2D"
                                 android:text="Diuréticos"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -151,8 +156,10 @@
                                 android:layout_height="100dp"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginEnd="24dp"
-                                android:background="@color/botoninicio"
+                                android:backgroundTint="#7D88A3"
                                 android:text="Antivirales"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -162,8 +169,10 @@
                                 android:layout_height="100dp"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginEnd="24dp"
-                                android:background="#6200ED"
+                                android:backgroundTint="#BA1D61"
                                 android:text="Relajantes"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/button8" />
 
@@ -173,8 +182,10 @@
                                 android:layout_height="100dp"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginEnd="24dp"
-                                android:background="#6200ED"
+                                android:backgroundTint="#178F19"
                                 android:text="Soluciones Parentales"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
